@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
 
 #pfp{
     border-radius: 50%;
@@ -11,6 +15,7 @@ main{
     height: 65%;
     border: 5px solid #081c15;
     border-radius: 2%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav{
     font-size: 0;
@@ -29,14 +34,30 @@ nav button{
 #btnProfile{
     background-color: #90bc90;
 }
-
+.details{
+    display: flex;
+}
+.profile{
+    color: #081c15;
+}
+.about p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.about h2{
+    text-align: center;
+}
+.bio{
+    margin: 0%;
+    padding: 0%;
+}
 
 
 
 
 /* glitch code from https://codepen.io/cbanlawi/pen/xxRBeMY */
 body {
-    background: #1b4332;
+    background: #081c15;
     color: white;
     width: 100vw;
     height: 100vh;
@@ -50,6 +71,8 @@ body {
 }
 
 .glitch {
+    margin: 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -110,3 +133,41 @@ body {
     }
 }
   
+
+
+
+.block {
+	position: relative;
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
+
+

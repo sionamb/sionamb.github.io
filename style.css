@@ -3,59 +3,91 @@
     margin: 0%;
     padding: 0%;
 }
-
 #pfp{
     border-radius: 50%;
     height: 35vh;
 }
-
 main{
-    background-color: #A8CDA8;
+    background-color: white;
     width: 45%;
-    height: 65%;
+    height: 70%;
     border: 5px solid #081c15;
     border-radius: 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    font-size: 0;
-    background-color: #081c15;
-}
-nav button{
-    background-color: #2d6a4f;
-    width: 16.36%;
-    padding: 0%;
-    margin: 0%;
-    font-size: 20px;
-    border: 0;
-    border-radius: 5%;
-    margin: 0 2px 2px 0;
-}
-#btnProfile{
-    background-color: #90bc90;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 .details{
     display: flex;
 }
+.details img{
+    margin: 2%;
+    padding: 2%;
+    align-self: center;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #949494,
+                -5px -5px 10px #ffffff;
+}
 .profile{
     color: #081c15;
 }
-.about p{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.about h2{
+.about{
     text-align: center;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #949494,
+                -5px -5px 10px #ffffff;
 }
 .bio{
-    margin: 0%;
-    padding: 0%;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: smaller;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #949494,
+                -5px -5px 10px #ffffff;
 }
 
 
+button {
+    --bg: #025b33;
+    --text-color: #fff;
+    position: relative;
+    width: 13%;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: #1d4131 0px 7px 2px, #000 0px 8px 5px;
+    margin: 1%;
+    padding: 0.5%;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  button:active {
+    top: 4px;
+    box-shadow: #1d4131 0px 3px 2px,#000 0px 3px 5px;
+  }
 
 
-/* glitch code from https://codepen.io/cbanlawi/pen/xxRBeMY */
+
+
+/* glitch code for the header from https://codepen.io/cbanlawi/pen/xxRBeMY */
 body {
     background: #081c15;
     color: white;
@@ -136,17 +168,17 @@ body {
 
 
 
+/* border code from https://codepen.io/Huhtamaki/pen/GPzwPY */
 .block {
 	position: relative;
 }
-
 .block:before, .block:after {
 	content: '';
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
+	background: linear-gradient(45deg, #157F1F, #4CB963, #A0EADE,#5C6784, #1D263B, #157F1F, 
+		#4CB963, #A0EADE,#5C6784, #1D263B);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -171,3 +203,30 @@ body {
 }
 
 
+
+
+
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+   
+.card2 {
+    width: 190px;
+    height: 254px;
+    background-color: white;
+    color: #000;
+    transition: all .2s;
+}
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}

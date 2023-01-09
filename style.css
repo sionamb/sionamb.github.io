@@ -187,6 +187,10 @@ body {
 .card:hover, .stats:hover {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
+.stats:hover{
+    border-radius: 100%;
+    height: min-content;
+}
 .skillsCard{
     height: 15rem;
 }

@@ -1,10 +1,13 @@
 //Drop down the current accordion element
 
 //variable to hold accordion elements
-let accordion = document.getElementsByClassName("accordion");
-console.log(accordion)
+const accordion = document.getElementsByClassName("accordion");
 
-// let description = document.getElementsByClassName("panel")
+
+
+//have the first description displayed on load
+
+
 
 //iterate through each element and drop down the active one 
 for (let i = 0; i < accordion.length; i++) {

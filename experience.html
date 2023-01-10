@@ -8,7 +8,7 @@
     <script defer src="./app.js"></script>
     <title>Siona Beaudoin</title>
 </head>
-<body>
+<body onload="dropDown()">
 
     <header>
         <p class="glitch">
@@ -30,7 +30,7 @@
         </nav>
                 
         <div class="experience">
-            <button class="accordion firstAccordion">
+            <button class="accordion firstAccordion" id="exp1">
                 <div class="expPosition">
                     <p><b>Student Research Assistant</b></p>
                     <p>Sept 2022 - Present</p>
@@ -45,7 +45,7 @@
                     <p>Assisting a professor with writing a paper on an overview of cybersecurity attacks, trends, prediction, and detection.</p>
                 </div>
             </div>
-            <button class="accordion">
+            <button class="accordion" id="exp2">
                 <div class="expPosition">
                     <p><b>Small Business Website</b></p>
                     <p>Aug 2022 - Present</p>    
@@ -60,7 +60,7 @@
                     <p>Consulted with a Michigan small business owner on the rework and redesign of their website.</p>
                 </div>            
             </div>
-            <button class="accordion">
+            <button class="accordion" id="exp3">
                 <div class="expPosition">
                     <p><b>Waitress</b></p>
                     <p>June 2022 - Aug 2022</p>
@@ -75,7 +75,7 @@
                     <p>Waited on customers and handled any technological issues that arose.</p>
                 </div>
             </div>
-            <button class="accordion">
+            <button class="accordion" id="exp4">
                 <div class="expPosition">
                     <p><b>Assistant Baker</b></p>
                     <p>Jan 2017 - Aug 2022</p>
@@ -90,7 +90,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, neque.</p>
                 </div>
             </div>
-            <button class="accordion lastAccordion">
+            <button class="accordion lastAccordion" id="exp5">
                 <div class="expPosition">
                     <p><b>Farm Hand</b></p>
                     <p>May 2015 - Aug 2022</p>

@@ -33,6 +33,7 @@ nav{
     border-radius: 12px;
     box-shadow:  5px 5px 10px #949494,
                 -5px -5px 10px #ffffff;
+    transition: 1s;
 }
 .profile{
     color: #081c15;
@@ -47,9 +48,13 @@ nav{
     border-radius: 12px;
     box-shadow:  5px 5px 10px #949494,
                 -5px -5px 10px #ffffff;
+    transition: 1s;
 }
-.about:hover, .bio:hover, .details img:hover, .languages:hover, .stats img:hover{
-    box-shadow: 0px 0px 30px 1px rgb(129, 129, 213);
+.about:hover, .bio:hover, .details img:hover, .languages:hover{
+    box-shadow: 0px 0px 30px 1px rgb(172, 172, 204);
+}
+.stats img:hover{
+    box-shadow: 0px 0px 30px 1px rgb(129, 129, 206);
 }
 .bio{
     margin: 2%;
@@ -57,7 +62,6 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    text-transform: uppercase;
     font-size: smaller;
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
               linear-gradient(to right, darkorchid, darkblue) border-box;
@@ -65,6 +69,7 @@ nav{
     border-radius: 12px;
     box-shadow:  5px 5px 10px #949494,
                 -5px -5px 10px #ffffff;
+    transition: 1s;
 }
 .languages{
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
@@ -80,12 +85,53 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    transition: 1s;
 }
 .stats img{
     border-radius: 100%;
+    transition: 1s;
+}
+.skills{
+    margin: 5%;
 }
 
-button {
+.experience{
+    color: #000;
+}
+.expPosition, .expLocation{
+    display: flex;
+    justify-content: space-between;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+nav button {
     --bg: #025b33;
     --text-color: #fff;
     position: relative;
@@ -101,14 +147,15 @@ button {
     padding: 0.5%;
   }
   
-  button:hover {
+nav button:hover {
     opacity: 1;
-  }
-  
-  button:active {
+}
+
+nav button:active {
     top: 4px;
     box-shadow: #1d4131 0px 3px 2px,#000 0px 3px 5px;
-  }
+}
+
 
 
 
@@ -184,26 +231,7 @@ body {
         -0.04em -0.025em 0 #bce784;
     }
 }
-  
 
-
-
-
-.skills{
-    margin: 5%;
-}
-.experience{
-    color: #000;
-    margin: 5%;
-    height: 25rem;
-}
-.expPosition, .expLocation{
-    display: flex;
-    justify-content: space-between;
-}
-.expCard2{
-    height: 25rem;
-}
 
 
 
@@ -225,7 +253,6 @@ body {
 	z-index: -1;
 	animation: steam 20s linear infinite;
 }
-
 @keyframes steam {
 	0% {
 		background-position: 0 0;
@@ -237,7 +264,6 @@ body {
 		background-position: 0 0;
 	}
 }
-
 .block:after {
 	filter: blur(50px);
 }

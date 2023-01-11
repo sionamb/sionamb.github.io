@@ -3,6 +3,7 @@ const cards = document.getElementsByClassName("card")
 console.log(cards)
 console.log(cards.length)
 
+let currentIndex = 0
 createLinkedList()
 
 function createLinkedList(){
@@ -42,18 +43,73 @@ function createLinkedList(){
         list.insertLast(cards[i])
         console.log(cards[i])
     }
-
+    //make the doubly linked list circular
+    list.head.previous = list.tail
+    list.tail.next = list.head
     console.log(list)
 
     displayFirst(list)
+
+    const prevBtn = document.getElementById("previous")
+    prevBtn.addEventListener("click", (e) =>{
+        prev(list)
+    })
+
+    const nextBtn = document.getElementById("next")
+    nextBtn.addEventListener("click", (e) =>{
+        next(list)
+    })
+
 }
 
 function displayFirst(list){
-    console.log(list.nodes[0].value)
-    list.nodes[0].value.style.display = "block"
-    list.nodes[0].next.value.style.display = "block"
+    // console.log(list.nodes[0].value)
+
+    list.nodes[currentIndex].previous.value.style.display = "block"
+    list.nodes[currentIndex].value.style.display = "block"
+    list.nodes[currentIndex].next.value.style.display = "block"
 }
 
-cards[i].addEventListener("click", e=>{
-    
-})
+function prev(list){
+    //remove current cards
+    removeCards()
+
+    console.log(currentIndex)
+
+    currentIndex--
+    console.log(currentIndex)
+
+    if(currentIndex < 0){
+        currentIndex = 6
+    }
+    console.log(currentIndex)
+    console.log(list.nodes[currentIndex].value)
+    list.nodes[currentIndex].previous.value.style.display = "block"
+    list.nodes[currentIndex].value.style.display = "block"
+    list.nodes[currentIndex].next.value.style.display = "block"
+}
+
+function next(list){
+    //remove current cards
+    removeCards()
+
+    console.log(currentIndex)
+
+    currentIndex++
+    console.log(currentIndex)
+
+    if(currentIndex > 6){
+        currentIndex = 0
+    }
+    console.log(currentIndex)
+    console.log(list.nodes[currentIndex].value)
+    list.nodes[currentIndex].previous.value.style.display = "block"
+    list.nodes[currentIndex].value.style.display = "block"
+    list.nodes[currentIndex].next.value.style.display = "block"
+}
+
+function removeCards(){
+    for(i = 0; i < cards.length; i++){
+        cards[i].style.display = "none"
+    }
+}

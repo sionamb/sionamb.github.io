@@ -3,8 +3,6 @@
 //variable to hold accordion elements
 const accordion = document.getElementsByClassName("accordion")
 
-
-
 //have the first description displayed on load
 function dropDown(){
     //variable to hold the description of the first accordion element
@@ -12,7 +10,6 @@ function dropDown(){
     //display the description
     description.style.display = "block"
 }
-
 
 //iterate through each element and drop down the active one 
 for (let i = 0; i < accordion.length; i++) {

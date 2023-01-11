@@ -1,7 +1,7 @@
 //Drop down the current accordion element
 
 //variable to hold accordion elements
-const accordion = document.getElementsByClassName("accordion");
+const accordion = document.getElementsByClassName("accordion")
 
 
 

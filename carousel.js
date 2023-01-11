@@ -1,31 +1,59 @@
 const cards = document.getElementsByClassName("card")
 
 console.log(cards)
+console.log(cards.length)
 
-class Node {
-    // Constructor to create a new node
-    // next and prev is by default initialized as null
-    constructor(val) {
-        this.data = val;
-        this.prev = null;
-        this.next = null;
-    }
-}
+createLinkedList()
 
 function createLinkedList(){
-    for(let i = 0; i < cards.length; i++){
-        //value
-        let newNode = new Node(cards[i])
-    
-        //prev
-        if(i = 0)
-            newNode.prev = cards[cards.length]
-        else
-            newNode.prev = cards[i - 1]
-        //next
-        if(i = cards.length)
-            newNode.next = cards[0]
-        else
-            newNode.next = cards[i + 1]
+    class DoublyLinkedList {
+        constructor() {
+            this.nodes = [];
+        }
+      
+        get size() {
+            return this.nodes.length;
+        }
+      
+        get head() {
+            return this.size ? this.nodes[0] : null;
+        }
+      
+        get tail() {
+            return this.size ? this.nodes[this.size - 1] : null;
+        }
+
+        insertAt(index, value) {
+            const previousNode = this.nodes[index - 1] || null;
+            const nextNode = this.nodes[index] || null;
+            const node = { value, next: nextNode, previous: previousNode };
+        
+            if (previousNode) previousNode.next = node;
+            if (nextNode) nextNode.previous = node;
+            this.nodes.splice(index, 0, node);
+        }
+        insertLast(value) {
+            this.insertAt(this.size, value);
+        }
     }
+
+    const list = new DoublyLinkedList();
+    for(let i = 0; i < cards.length; i++){
+        list.insertLast(cards[i])
+        console.log(cards[i])
+    }
+
+    console.log(list)
+
+    displayFirst(list)
 }
+
+function displayFirst(list){
+    console.log(list.nodes[0].value)
+    list.nodes[0].value.style.display = "block"
+    list.nodes[0].next.value.style.display = "block"
+}
+
+cards[i].addEventListener("click", e=>{
+    
+})

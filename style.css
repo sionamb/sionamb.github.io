@@ -262,6 +262,7 @@ nav{
     padding: .4em;
     border-radius: 6px;
     border: 5px solid black;
+    display: none;
   }
   
   .card-image {

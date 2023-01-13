@@ -545,3 +545,61 @@ body {
 .block:after {
 	filter: blur(50px);
 }
+
+@media only screen and (max-width: 1200px){
+    main{
+        width: 75%;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .glitch{
+        font-size: 2.5rem;
+    }
+    main{
+        width: 100%;
+        height: fit-content;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    nav button{
+        width: fit-content;
+        padding: 2%;
+        margin-top: 3%;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .languages{
+        height: fit-content;
+    }
+    .GitHubStats{
+        display: flex;
+        flex-direction: column;
+    }
+    .statsGraphic{
+        width: fit-content;
+    }
+    .card{
+        visibility: hidden;
+        width: 0;
+    }
+    .currentCard{
+        visibility: visible;
+        width: 100%;
+    }
+}
+@media only screen and (max-height:730px){
+    main{
+        height: 100%;
+        margin: 0;
+    }
+}

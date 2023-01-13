@@ -211,9 +211,9 @@ nav{
     height: 2.8em;
     padding-right: 3.3em;
     width: 13rem;
-   }
+}
    
-   .cssbuttons-io-button .icon {
+.cssbuttons-io-button .icon {
     background: white;
     margin-left: 1em;
     position: absolute;
@@ -226,25 +226,25 @@ nav{
     box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
     right: 0.3em;
     transition: all 0.3s;
-   }
+}
    
-   .cssbuttons-io-button:hover .icon {
+.cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
-   }
+}
    
-   .cssbuttons-io-button .icon svg {
+.cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: #7b52b9;
-   }
+}
    
-   .cssbuttons-io-button:hover .icon svg {
+.cssbuttons-io-button:hover .icon svg {
     transform: translateX(0.1em);
-   }
+}
    
-   .cssbuttons-io-button:active .icon {
+.cssbuttons-io-button:active .icon {
     transform: scale(0.95);
-   }
+}
    
 
 
@@ -355,9 +355,6 @@ nav{
     height: 100%;
     vertical-align: bottom;
 }
-.projectDate span {
-
-}
 .actionButtons{
     display: flex;
     justify-content: center;
@@ -404,16 +401,10 @@ nav{
 
 
 
-
-
-
-
-
 nav button {
     --bg: #025b33;
     --text-color: #fff;
     position: relative;
-    width: 13%;
     border: none;
     background: var(--bg);
     color: var(--text-color);
@@ -422,7 +413,9 @@ nav button {
     opacity: 0.8;
     box-shadow: #1d4131 0px 7px 2px, #000 0px 8px 5px;
     margin: 1%;
-    padding: 0.5%;
+    padding: 0.5% 3%;
+    font-size: larger;
+    
   }
   
 nav button:hover {
@@ -546,13 +539,15 @@ body {
 	filter: blur(50px);
 }
 
+
+
+
 @media only screen and (max-width: 1200px){
     main{
         width: 75%;
         height: fit-content;
     }
 }
-
 @media only screen and (max-width: 810px){
     .glitch{
         font-size: 2.5rem;
@@ -573,6 +568,7 @@ body {
         width: fit-content;
         padding: 2%;
         margin-top: 3%;
+        font-size: medium;
     }
     nav{
         display: flex;

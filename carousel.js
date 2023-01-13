@@ -80,13 +80,45 @@ function prev(list){
     console.log(currentIndex)
 
     if(currentIndex < 0){
-        currentIndex = 6
+        currentIndex = list.size - 1
     }
-    console.log(currentIndex)
-    console.log(list.nodes[currentIndex].value)
-    list.nodes[currentIndex].previous.value.style.display = "block"
-    list.nodes[currentIndex].value.style.display = "block"
-    list.nodes[currentIndex].next.value.style.display = "block"
+
+    let projectsList = document.querySelector(".projectsList")
+    console.log(projectsList)
+
+    if(currentIndex === 6){
+        console.log("edge")
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        list.nodes[currentIndex].value.style.display = "block"
+        //next
+        let cloneCard1 = document.querySelector(".card1").cloneNode(true)
+        cloneCard1.style.display = "block"
+        console.log(cloneCard1)
+        projectsList.appendChild(cloneCard1)
+
+    }
+    else if(currentIndex === 0){
+        console.log("edge")
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        //current
+        let cloneCard1 = document.querySelector(".card1").cloneNode(true)
+        cloneCard1.style.display = "block"
+        console.log(cloneCard1)
+        projectsList.appendChild(cloneCard1)
+        //next
+        let cloneCard2 = document.querySelector(".card2").cloneNode(true)
+        cloneCard2.style.display = "block"
+        console.log(cloneCard2)
+        projectsList.appendChild(cloneCard2)
+    }
+    else{
+        console.log(currentIndex)
+        console.log(list.nodes[currentIndex].value)
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        list.nodes[currentIndex].value.style.display = "block"
+        list.nodes[currentIndex].next.value.style.display = "block"
+    }
+    
 }
 
 function next(list){
@@ -98,7 +130,8 @@ function next(list){
     currentIndex++
     console.log(currentIndex)
 
-    if(currentIndex > 6){
+
+    if(currentIndex > list.size - 1){
         currentIndex = 0
     }
     console.log(currentIndex)

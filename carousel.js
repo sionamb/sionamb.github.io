@@ -63,11 +63,19 @@ function createLinkedList(){
 }
 
 function displayFirst(list){
-    // console.log(list.nodes[0].value)
-
+    let projectsList = document.querySelector(".projectsList")
+    console.log("edge")
     list.nodes[currentIndex].previous.value.style.display = "block"
-    list.nodes[currentIndex].value.style.display = "block"
-    list.nodes[currentIndex].next.value.style.display = "block"
+    //current
+    let cloneCard1 = document.querySelector(".card1").cloneNode(true)
+    cloneCard1.style.display = "block"
+    console.log(cloneCard1)
+    projectsList.appendChild(cloneCard1)
+    //next
+    let cloneCard2 = document.querySelector(".card2").cloneNode(true)
+    cloneCard2.style.display = "block"
+    console.log(cloneCard2)
+    projectsList.appendChild(cloneCard2)
 }
 
 function prev(list){
@@ -95,7 +103,6 @@ function prev(list){
         cloneCard1.style.display = "block"
         console.log(cloneCard1)
         projectsList.appendChild(cloneCard1)
-
     }
     else if(currentIndex === 0){
         console.log("edge")
@@ -134,11 +141,42 @@ function next(list){
     if(currentIndex > list.size - 1){
         currentIndex = 0
     }
-    console.log(currentIndex)
-    console.log(list.nodes[currentIndex].value)
-    list.nodes[currentIndex].previous.value.style.display = "block"
-    list.nodes[currentIndex].value.style.display = "block"
-    list.nodes[currentIndex].next.value.style.display = "block"
+
+
+    let projectsList = document.querySelector(".projectsList")
+    console.log(projectsList)
+
+    if(currentIndex === 6){
+        console.log("edge")
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        list.nodes[currentIndex].value.style.display = "block"
+        //next
+        let cloneCard1 = document.querySelector(".card1").cloneNode(true)
+        cloneCard1.style.display = "block"
+        console.log(cloneCard1)
+        projectsList.appendChild(cloneCard1)
+    }
+    else if(currentIndex === 0){
+        console.log("edge")
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        //current
+        let cloneCard1 = document.querySelector(".card1").cloneNode(true)
+        cloneCard1.style.display = "block"
+        console.log(cloneCard1)
+        projectsList.appendChild(cloneCard1)
+        //next
+        let cloneCard2 = document.querySelector(".card2").cloneNode(true)
+        cloneCard2.style.display = "block"
+        console.log(cloneCard2)
+        projectsList.appendChild(cloneCard2)
+    }
+    else{
+        console.log(currentIndex)
+        console.log(list.nodes[currentIndex].value)
+        list.nodes[currentIndex].previous.value.style.display = "block"
+        list.nodes[currentIndex].value.style.display = "block"
+        list.nodes[currentIndex].next.value.style.display = "block"
+    }
 }
 
 function removeCards(){

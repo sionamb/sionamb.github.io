@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.scss">
     <script defer src="./carousel.js"></script>
     <title>Siona Beaudoin</title>
 </head>
@@ -31,18 +32,18 @@
         <div class="projects">
             <div class="projectsList">
                 <div class="card card1 currentCard">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/Lunabotics.png" alt="NASA Lunabotics group photo" class="card-image">
                     <div class="category"> NASA Lunabotics </div>
                     <div class="heading">
                         <ul>
                             <li>Assisted in object detection using deep learning and collected / labeled image data.</li>
                             <li>Engaged in community outreach by presenting to a FIRST Robotics team about our project.</li>
                         </ul>
-                        <div class="projectDate">Jan 2022 - May 2022</div>
+                        <div class="projectDate"><span>Jan 2022 - May 2022</span></div>
                     </div>
                 </div>
                 <div class="card card2">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/JSHS.jpg" alt="Junior Science and Humanities Symposium award presentation" class="card-image">
                     <div class="category"> Junior Science and Humanities Symposium </div>
                     <div class="heading"> 
                         <ul>
@@ -53,7 +54,7 @@
                     </div>
                 </div>
                 <div class="card card3">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/acm.png" alt="Association of Computing Machinery Logo" class="card-image">
                     <div class="category"> Association of Computing Machinery </div>
                     <div class="heading"> 
                         <ul>
@@ -63,7 +64,7 @@
                     </div>
                 </div>
                 <div class="card card4">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/MLC.jpg" alt="Machine Learning Club Logo" class="card-image">
                     <div class="category"> Machine Learning Club </div>
                     <div class="heading">
                         <ul>
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <div class="card card5">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/GDSC.png" alt="Google Developers Student Club Logo" class="card-image">
                     <div class="category"> Google Developers Student Club </div>
                     <div class="heading">
                         <ul>
@@ -86,7 +87,7 @@
                     </div>
                 </div>
                 <div class="card card6">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/FIRSTrobotics.jpg" alt="Working on robot" class="card-image">
                     <div class="category"> FIRST Robotics </div>
                     <div class="heading">
                         <ul>
@@ -98,22 +99,28 @@
                     </div>
                 </div>
                 <div class="card card7">
-                    <div class="card-image"></div>
+                    <img src="./images/projects/eCYBERMISSION.jpg" alt="eCybermission award presentation" class="card-image">
                     <div class="category"> eCybermission </div>
                     <div class="heading">
                         <ul>
                             <li>
-                                Completed various research projects on a team of 3 regarding the use of a mining waste where we 
+                                Completed research projects on a team of 3 regarding the use of a mining waste, where we 
                                 placed 1st in Michigan 3 years and 1st nationally 1 year.</li>
-                            <li>Was awarded a $5,000 community outreach research grant on the use of this mining waste (Stamp Sands).</li>
+                            <li>Was awarded a $5,000 community outreach research grant on the use of this mining waste.</li>
                         </ul>
-                        <div class="projectDate">Sept 2016 - Dec 2019</div>
+                        <div class="projectDate"><span>Sept 2016 - Dec 2019</span></div>
                     </div>
                 </div>
             </div>
-            <br><br>
-            <button id="previous">Prev</button>
-            <button id="next">Next</button>
+            <div class="actionButtons">
+                <button id="previous" class="custom-btn btn-1">
+                    <img src="./images/direction/previous.png" alt="Previous" height="40px">
+                </button>
+                <button id="next" class="custom-btn btn-1">
+                    <img src="./images/direction/next.png" alt="Next" height="40px">
+                </button>
+            </div>
+            
         </div>
     </main>
 </body>

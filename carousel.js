@@ -98,10 +98,17 @@ function prev(list){
         console.log("edge")
         list.nodes[currentIndex].previous.value.style.display = "block"
         list.nodes[currentIndex].value.style.display = "block"
+
+        list.nodes[currentIndex].value.classList.add("currentCard")
+
         //next
         let cloneCard1 = document.querySelector(".card1").cloneNode(true)
         cloneCard1.style.display = "block"
         console.log(cloneCard1)
+
+        cloneCard1.classList.remove("currentCard")
+        list.nodes[currentIndex].next.value.classList.remove("currentCard")
+        
         projectsList.appendChild(cloneCard1)
     }
     else if(currentIndex === 0){
@@ -111,6 +118,10 @@ function prev(list){
         let cloneCard1 = document.querySelector(".card1").cloneNode(true)
         cloneCard1.style.display = "block"
         console.log(cloneCard1)
+
+        cloneCard1.classList.add("currentCard")
+        list.nodes[currentIndex].next.value.classList.remove("currentCard")
+
         projectsList.appendChild(cloneCard1)
         //next
         let cloneCard2 = document.querySelector(".card2").cloneNode(true)
@@ -124,6 +135,9 @@ function prev(list){
         list.nodes[currentIndex].previous.value.style.display = "block"
         list.nodes[currentIndex].value.style.display = "block"
         list.nodes[currentIndex].next.value.style.display = "block"
+
+        list.nodes[currentIndex].value.classList.add("currentCard")
+        list.nodes[currentIndex].next.value.classList.remove("currentCard")
     }
     
 }
@@ -154,6 +168,10 @@ function next(list){
         let cloneCard1 = document.querySelector(".card1").cloneNode(true)
         cloneCard1.style.display = "block"
         console.log(cloneCard1)
+
+        list.nodes[currentIndex].value.classList.add("currentCard")
+        list.nodes[currentIndex].previous.value.classList.remove("currentCard")
+
         projectsList.appendChild(cloneCard1)
     }
     else if(currentIndex === 0){
@@ -163,6 +181,10 @@ function next(list){
         let cloneCard1 = document.querySelector(".card1").cloneNode(true)
         cloneCard1.style.display = "block"
         console.log(cloneCard1)
+
+        cloneCard1.classList.add("currentCard")
+        list.nodes[currentIndex].previous.value.classList.remove("currentCard")
+
         projectsList.appendChild(cloneCard1)
         //next
         let cloneCard2 = document.querySelector(".card2").cloneNode(true)
@@ -176,7 +198,12 @@ function next(list){
         list.nodes[currentIndex].previous.value.style.display = "block"
         list.nodes[currentIndex].value.style.display = "block"
         list.nodes[currentIndex].next.value.style.display = "block"
+        
+        list.nodes[currentIndex].value.classList.add("currentCard")
+        list.nodes[currentIndex].previous.value.classList.remove("currentCard")
     }
+
+
 }
 
 function removeCards(){

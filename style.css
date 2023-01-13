@@ -286,7 +286,7 @@ nav{
 
 .projectsList{
     display: flex;
-
+    justify-content: center;
 }
 
 .card {
@@ -299,23 +299,30 @@ nav{
     display: none;
     margin: 2%;
     margin-top: 7%;
+    border: 4px solid darkorchid;
+    border-radius: 12px;
+    box-shadow: inset 20px 20px 40px #b3b3b3,
+            inset -20px -20px 40px #ffffff;
+    filter: blur(2px);
 }
 .currentCard{
-    width: 245px;
-    height: 320px;
+    width: 260px;
+    height: 350px;
     margin: 2%;
+    border: 4px solid darkblue;
+    background-color: white;
+    filter: none;
+    box-shadow:  5px 5px 10px #949494,
+                -5px -5px 10px #ffffff;
 }
 .card-image {
-    background-color: rgb(236, 236, 236);
     width: 100%;
     height: 40%;
-    border-radius: 6px 6px 0 0;
+    border-radius: 6px;
+    object-fit: cover;
 }
 .currentCard .card-image {
-    background-color: rgb(236, 236, 236);
-    width: 100%;
     height: 50%;
-    border-radius: 6px 6px 0 0;
 }
 .category {
     text-transform: uppercase;
@@ -324,9 +331,14 @@ nav{
     color: #348aa7;
     padding: 10px 7px 0;
 }
+.currentCard .category{
+    font-size: 1em;
+    padding: 5px 2px 0;
+}
 .heading {
     color: rgb(88, 87, 87);
     padding: 7px;
+    padding-right: 0;
     font-size: xx-small;
 }
 .currentCard .heading{
@@ -337,8 +349,57 @@ nav{
     color: gray;
     font-weight: 400;
     font-size: 11px;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+}
+.projectDate span {
+
+}
+.actionButtons{
+    display: flex;
+    justify-content: center;
+}
+#previous, #next{
+    margin: 1%;
 }
 
+
+
+.custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-1 {
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    border: none;
+}
+.btn-1:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-1:hover {
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255,255,255,.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+   
 
 
 

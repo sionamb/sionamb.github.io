@@ -1,0 +1,72 @@
+@import "susy";
+$gutter: 10px;
+$columns: 12;
+$susy: ( columns: $columns, gutter-position: inside-static, //fixed width gutters like bootstrap
+column-width: 120px, gutter: $gutter/120px );
+
+$tablet: 768px;
+$desktop: 992px;
+$wide: 1200px;
+
+body {
+  padding: 40px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 -#{$gutter};
+}
+
+@supports (display: grid) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat($columns, minmax(0,1fr));
+    grid-column-gap: calc(#{$gutter} * 2);
+    margin: 0 auto;
+  }
+}
+
+.col {  
+  box-sizing: border-box;
+  float: left;
+}
+
+.box {
+  background: #bada55;
+  border-radius: 5px;
+  margin: 0 0 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+@mixin make-grid-classes($class) {
+    @for $i from 1 through $columns {
+        .col-#{$class}-#{$i} {
+          padding-left: $gutter;
+          padding-right: $gutter;
+          width: span($i of $columns);
+        }
+  
+        @supports (display: grid) {
+          .col-#{$class}-#{$i} {
+            grid-column: auto / span $i;
+            padding: 0;
+            width: auto;
+          } 
+        }
+    }
+}
+
+@include make-grid-classes('xs');
+
+@media (min-width: $tablet) {
+  @include make-grid-classes('sm');
+}
+
+@media (min-width: $desktop) {
+  @include make-grid-classes('md');
+}
+
+@media (min-width: $wide) {
+  @include make-grid-classes('lg');
+}

@@ -1,11 +1,11 @@
 # sionamb.github.io - Portfolio Website
 
 ## Pages
-  1. Profile: <em></em>
-  2. Skills
-  3. Experience
-  4. Projects
-  5. Connect
+  1. <b>Profile:</b> General overview of myself and my interests/career goals.
+  2. <b>Skills:</b> A list of the languages, applications, frameworks, and code editors I use along with a link to my GitHub and my GitHub stats.
+  3. <b>Experience:</b> A accordion element with a list of my jobs with drop down descriptions.
+  4. <b>Projects:</b> A carousel element that displays 3 projects/organizations, with the right and left ones being blurred in the background.
+  5. <b>Connect:</b> Various buttons that link to pages where you can connect with me.
 
 ## Custom JavaScript Elements:
   ### 1. Accordion (app.js): <em>An accordion element that drops down or raises up a section when clicked</em>
@@ -29,12 +29,10 @@ function displayFirst(list){
     //current
     let cloneCard1 = document.querySelector(".card1").cloneNode(true)
     cloneCard1.style.display = "block"
-    console.log(cloneCard1)
     projectsList.appendChild(cloneCard1)
     //next
     let cloneCard2 = document.querySelector(".card2").cloneNode(true)
     cloneCard2.style.display = "block"
-    console.log(cloneCard2)
     projectsList.appendChild(cloneCard2)
 }
 ```
@@ -43,6 +41,7 @@ function displayFirst(list){
 ## Other Functionalities:
   - CSS media queries are used to make the site screen adaptive 
   - Various sections have a glow effect when hovered over (using CSS)
+  - Several different types of buttons with hover effects
   
   
 ## Credits:

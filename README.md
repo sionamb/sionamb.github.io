@@ -1,7 +1,14 @@
 # sionamb.github.io - Portfolio Website
 
+## Pages
+  1. Profile: <em></em>
+  2. Skills
+  3. Experience
+  4. Projects
+  5. Connect
+
 ## Custom JavaScript Elements:
-  ### Accordion (app.js): <em>An accordion element that drops down or raises up a section when clicked</em>
+  ### 1. Accordion (app.js): <em>An accordion element that drops down or raises up a section when clicked</em>
  
   - Starts off with the first section dropped down by using setting the display style to block (none is what it is set to in the HTML):
 ```
@@ -12,7 +19,7 @@ function dropDown(){
 ```
   - Similar logic is used to drop down the clicked section unless the element clicked is the already dropped down section, in which case it raises it back up 
 
-### Carousel (carousel.js): <em>A card carousel that iterates through the cards when the left and right arrows are clicked using a doubly linked list</em>
+### 2. Carousel (carousel.js): <em>A card carousel that iterates through the cards when the left and right arrows are clicked using a doubly linked list</em>
   - Starts off with the first card (Card1) in the center, with the previous card (Card7) being to the left and the next card (Card2) to the right
 ```
 function displayFirst(list){

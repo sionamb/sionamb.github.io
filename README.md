@@ -45,5 +45,5 @@ function displayFirst(list){
 - Background Effect: <a href = "https://codepen.io/Huhtamaki/pen/GPzwPY">@Huhtamaki on CodePen<a>
 - Glitch Effect: <a href = "https://codepen.io/cbanlawi/pen/xxRBeMY">@cbanlawi on CodePen<a>
 - GitHub Most Used Languages Graphic: <a href = "https://github.com/anuraghazra/github-readme-stats">@anuraghazra on GitHub<a>
-- Pixel Character: <a href = ""></a>
+- Pixel Character: <a href = "https://www.avatarsinpixels.com/">Minipix Dollmaker on Avitars In Pixels</a>
 - Prototype Designed on: <a href = "https://www.justinmind.com/">Justinmind<a>

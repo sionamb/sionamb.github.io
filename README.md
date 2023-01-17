@@ -1,6 +1,7 @@
 # sionamb.github.io - Portfolio Website
 
 ## Pages
+- There is a background effect with the pages being displayed on a smaller section in the middle of the screen. The pages are as follows: 
   1. <b>Profile:</b> General overview of myself and my interests/career goals.
   2. <b>Skills:</b> A list of the languages, applications, frameworks, and code editors I use along with a link to my GitHub and my GitHub stats.
   3. <b>Experience:</b> A accordion element with a list of my jobs with drop down descriptions.
@@ -52,4 +53,4 @@ function displayFirst(list){
 - Glitch Effect: <a href = "https://codepen.io/cbanlawi/pen/xxRBeMY">@cbanlawi on CodePen<a>
 - GitHub Most Used Languages Graphic: <a href = "https://github.com/anuraghazra/github-readme-stats">@anuraghazra on GitHub<a>
 - Pixel Character: <a href = "https://www.avatarsinpixels.com/">Minipix Dollmaker on Avitars In Pixels</a>
-- Prototype Designed on: <a href = "https://www.justinmind.com/">Justinmind<a>
+- Prototype Designed Using: <a href = "https://www.justinmind.com/">Justinmind<a>

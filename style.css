@@ -1,65 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+* {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
-#pfp{
+#pfp {
     border-radius: 50%;
     height: 35vh;
 }
-main{
-    background-color: white;
+main {
+    background-color: #081c15;
     width: 45%;
     height: 70%;
     border: 5px solid #081c15;
-    border-radius: 2%;
-    font-family: "Poppins",Helvetica, sans-serif;
+    border-radius: 4px;
+    font-family: "Poppins", Helvetica, sans-serif;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 3%;
 }
-.details{
+.details {
     display: flex;
 }
-.details img{ /* pixel character created using https://www.avatarsinpixels.com */
+.details img {
+    /* pixel character created using https://www.avatarsinpixels.com */
     margin: 2%;
     padding: 2%;
     align-self: center;
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkblue, darkorchid) border-box;
+        linear-gradient(to right, #348aa7, #525174) border-box;
     border: 4px solid transparent;
     border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
     transition: 1s;
 }
-.profile{
+.profile {
     color: #081c15;
 }
-.about{
+.about {
     text-align: center;
     margin: 2%;
     padding: 2%;
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkblue, darkorchid) border-box;
+        linear-gradient(to right, #348aa7, #525174) border-box;
     border: 4px solid transparent;
     border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
     transition: 1s;
 }
-.about:hover, .bio:hover, .details img:hover, .languages:hover, .experience:hover, .statsGraphic:hover, .links:hover{
-    box-shadow: 0px 0px 30px 1px rgb(172, 172, 204);
+.about:hover,
+.bio:hover,
+.details img:hover,
+.languages:hover,
+.experience:hover,
+.statsGraphic:hover,
+.links:hover {
+    box-shadow: 0px 0px 30px 1px #237256;
 }
-.stats img:hover{
-    box-shadow: 0px 0px 30px 1px rgb(129, 129, 206);
-}
-.bio{
+.bio {
     margin: 2%;
     padding: 2%;
     display: flex;
@@ -67,68 +68,29 @@ nav{
     justify-content: space-around;
     font-size: smaller;
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkorchid, darkblue) border-box;
+        linear-gradient(to right, #348aa7, #525174) border-box;
     border: 4px solid transparent;
     border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
     transition: 1s;
 }
-.languages{
-    background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkorchid, darkblue) border-box;
-    border: 4px solid transparent;
-    border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
-    color: #000;
-    text-align: center;
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    transition: 1s;
-}
-.stats img{
-    border-radius: 100%;
-    transition: 1s;
-}
-.stats{
-    align-self: center;
-    padding-left: 10%;
-}
-.skills{
-    margin: 5%;
-}
-.GitHubStats{
-    display: flex;
-    justify-content: space-between;
-}
-.statsGraphic{
-    background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkorchid, darkblue) border-box;
-    border: 4px solid transparent;
-    border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
-    transition: 1s;
-}
-.experience{
+
+.experience {
     color: #000;
     margin: 5%;
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-              linear-gradient(to right, darkorchid, darkblue) border-box;
+        linear-gradient(to right, #348aa7, #525174) border-box;
     border: 4px solid transparent;
     border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
     transition: 1s;
 }
-.expPosition, .expLocation{
+.expPosition,
+.expLocation {
     display: flex;
     justify-content: space-between;
 }
-.expDescription{
+.expDescription {
     list-style-type: circle;
     padding-left: 5%;
     font-size: small;
@@ -146,10 +108,10 @@ nav{
     transition: 0.4s;
 }
 .accordion:hover {
-    background-color: rgb(210, 210, 244); 
+    background-color: rgb(210, 210, 244);
 }
-.active{
-    background-color: rgb(231, 231, 252); 
+.active {
+    background-color: #bae7f7;
 }
 .panel {
     padding: 1%;
@@ -157,15 +119,16 @@ nav{
     background-color: white;
     overflow: hidden;
 }
-.firstAccordion{
+.firstAccordion {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-.lastAccordion, .lastPanel{
+.lastAccordion,
+.lastPanel {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-.connect{
+.connect {
     color: #000;
     text-align: center;
     margin: 5%;
@@ -174,16 +137,15 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.connect h2{
+.connect h2 {
     padding-bottom: 3%;
 }
-.links{
+.links {
     background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
-                linear-gradient(to right, darkorchid, darkblue) border-box;
+        linear-gradient(to right, #348aa7, #525174) border-box;
     border: 4px solid transparent;
     border-radius: 12px;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
     transition: 1s;
     height: 20rem;
     width: 15rem;
@@ -191,17 +153,16 @@ nav{
     flex-direction: column;
     justify-content: space-evenly;
 }
-.links a{
+.links a {
     align-self: center;
 }
-.connect a:link, a:visited{
+.connect a:link,
+a:visited {
     text-decoration: none;
 }
 
-
-
 .cssbuttons-io-button {
-    background: #A370F0;
+    background: #a370f0;
     color: white;
     font-family: inherit;
     padding: 0.35em;
@@ -220,7 +181,7 @@ nav{
     padding-right: 3.3em;
     width: 13rem;
 }
-   
+
 .cssbuttons-io-button .icon {
     background: white;
     margin-left: 1em;
@@ -235,30 +196,26 @@ nav{
     right: 0.3em;
     transition: all 0.3s;
 }
-   
+
 .cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
 }
-   
+
 .cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: #7b52b9;
 }
-   
+
 .cssbuttons-io-button:hover .icon svg {
     transform: translateX(0.1em);
 }
-   
+
 .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
 }
-   
 
-
-
-
-.projectsList{
+.projectsList {
     display: flex;
     justify-content: center;
 }
@@ -267,7 +224,7 @@ nav{
     width: 175px;
     height: 250px;
     background: white;
-    padding: .4em;
+    padding: 0.4em;
     border-radius: 6px;
     border: 5px solid black;
     display: none;
@@ -275,19 +232,17 @@ nav{
     margin-top: 7%;
     border: 4px solid darkorchid;
     border-radius: 12px;
-    box-shadow: inset 20px 20px 40px #b3b3b3,
-            inset -20px -20px 40px #ffffff;
+    box-shadow: inset 20px 20px 40px #b3b3b3, inset -20px -20px 40px #ffffff;
     filter: blur(2px);
 }
-.currentCard{
+.currentCard {
     width: 260px;
     height: 350px;
     margin: 2%;
     border: 4px solid darkblue;
     background-color: white;
     filter: none;
-    box-shadow:  5px 5px 10px #949494,
-                -5px -5px 10px #ffffff;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
 }
 .card-image {
     width: 100%;
@@ -305,7 +260,7 @@ nav{
     color: #348aa7;
     padding: 10px 7px 0;
 }
-.currentCard .category{
+.currentCard .category {
     font-size: 1em;
     padding: 5px 2px 0;
 }
@@ -315,7 +270,7 @@ nav{
     padding-right: 0;
     font-size: xx-small;
 }
-.currentCard .heading{
+.currentCard .heading {
     padding-left: 4%;
     font-size: small;
 }
@@ -329,15 +284,14 @@ nav{
     height: 100%;
     vertical-align: bottom;
 }
-.actionButtons{
+.actionButtons {
     display: flex;
     justify-content: center;
 }
-#previous, #next{
+#previous,
+#next {
     margin: 1%;
 }
-
-
 
 .custom-btn {
     color: #fff;
@@ -347,14 +301,17 @@ nav{
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-      7px 7px 20px 0px rgba(0,0,0,.1),
-      4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     outline: none;
 }
 .btn-1 {
-    background: rgb(96,9,240);
-    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+    background: rgb(96, 9, 240);
+    background: linear-gradient(
+        0deg,
+        rgba(96, 9, 240, 1) 0%,
+        rgba(129, 5, 240, 1) 100%
+    );
     border: none;
 }
 .btn-1:before {
@@ -362,15 +319,11 @@ nav{
     width: 2px;
 }
 .btn-1:hover {
-    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
-                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-       inset -4px -4px 6px 0 rgba(255,255,255,.2),
-       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+        -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
-   
-
-
-
 
 nav button {
     --bg: #025b33;
@@ -386,21 +339,16 @@ nav button {
     margin: 1%;
     padding: 0.5% 3%;
     font-size: larger;
-    
-  }
-  
+}
+
 nav button:hover {
     opacity: 1;
 }
 
 nav button:active {
     top: 4px;
-    box-shadow: #1d4131 0px 3px 2px,#000 0px 3px 5px;
+    box-shadow: #1d4131 0px 3px 2px, #000 0px 3px 5px;
 }
-
-
-
-
 
 /* glitch code for the header from https://codepen.io/cbanlawi/pen/xxRBeMY */
 body {
@@ -446,126 +394,131 @@ body {
 @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 #348aa7, -0.03em -0.04em 0 #525174,
-        0.025em 0.04em 0 #bce784;
+            0.025em 0.04em 0 #bce784;
     }
     15% {
         text-shadow: 0.05em 0 0 #348aa7, -0.03em -0.04em 0 #525174,
-        0.025em 0.04em 0 #bce784;
+            0.025em 0.04em 0 #bce784;
     }
     16% {
         text-shadow: -0.05em -0.025em 0 #348aa7, 0.025em 0.035em 0 #525174,
-        -0.05em -0.05em 0 #bce784;
+            -0.05em -0.05em 0 #bce784;
     }
     49% {
         text-shadow: -0.05em -0.025em 0 #348aa7, 0.025em 0.035em 0 #525174,
-        -0.05em -0.05em 0 #bce784;
+            -0.05em -0.05em 0 #bce784;
     }
     50% {
         text-shadow: 0.05em 0.035em 0 #348aa7, 0.03em 0 0 #525174,
-        0 -0.04em 0 #bce784;
+            0 -0.04em 0 #bce784;
     }
     99% {
         text-shadow: 0.05em 0.035em 0 #348aa7, 0.03em 0 0 #525174,
-        0 -0.04em 0 #bce784;
+            0 -0.04em 0 #bce784;
     }
     100% {
         text-shadow: -0.05em 0 0 #348aa7, -0.025em -0.04em 0 #525174,
-        -0.04em -0.025em 0 #bce784;
+            -0.04em -0.025em 0 #bce784;
     }
 }
 
-
-
-
-
 /* border code from https://codepen.io/Huhtamaki/pen/GPzwPY */
 .block {
-	position: relative;
+    position: relative;
 }
-.block:before, .block:after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-	background: linear-gradient(45deg, #157F1F, #4CB963, #A0EADE,#5C6784, #1D263B, #157F1F, 
-		#4CB963, #A0EADE,#5C6784, #1D263B);
-	background-size: 400%;
-	width: calc(100% + 4px);
-	height: calc(100% + 4px);
-	z-index: -1;
-	animation: steam 20s linear infinite;
+.block:before,
+.block:after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(
+        45deg,
+        #157f1f,
+        #4cb963,
+        #a0eade,
+        #5c6784,
+        #1d263b,
+        #157f1f,
+        #4cb963,
+        #a0eade,
+        #5c6784,
+        #1d263b
+    );
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
 }
 @keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 .block:after {
-	filter: blur(50px);
+    filter: blur(50px);
 }
 
-
-
-
-@media only screen and (max-width: 1200px){
-    main{
+@media only screen and (max-width: 1200px) {
+    main {
         width: 75%;
         height: fit-content;
     }
 }
-@media only screen and (max-width: 810px){
-    .glitch{
+@media only screen and (max-width: 810px) {
+    .glitch {
         font-size: 2.5rem;
     }
-    main{
+    main {
         width: 100%;
         height: fit-content;
     }
-    .profile{
+    .profile {
         display: flex;
         flex-direction: column;
     }
-    .details{
+    .details {
         display: flex;
         flex-direction: column;
     }
-    nav button{
+    nav button {
         width: fit-content;
         padding: 2%;
         margin-top: 3%;
         font-size: medium;
     }
-    nav{
+    nav {
         display: flex;
         flex-wrap: wrap;
     }
-    .languages{
+    .languages {
         height: fit-content;
     }
-    .GitHubStats{
+    .GitHubStats {
         display: flex;
         flex-direction: column;
     }
-    .statsGraphic{
+    .statsGraphic {
         width: fit-content;
     }
-    .card{
+    .card {
         visibility: hidden;
         width: 0;
     }
-    .currentCard{
+    .currentCard {
         visibility: visible;
         width: 100%;
     }
 }
-@media only screen and (max-height:730px){
-    main{
+@media only screen and (max-height: 730px) {
+    main {
         height: 100%;
         margin: 0;
     }

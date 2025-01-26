@@ -1,51 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Siona Beaudoin</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="skills.css" />
+        <title>Siona Beaudoin</title>
+    </head>
+    <body>
+        <header>
+            <p class="glitch">
+                <span aria-hidden="true">Siona Beaudoin</span>
+                Siona Beaudoin
+                <span aria-hidden="true">Siona Beaudoin</span>
+            </p>
+        </header>
 
-    <header>
-        <p class="glitch">
-            <span aria-hidden="true">Siona Beaudoin</span>
-            Siona Beaudoin
-            <span aria-hidden="true">Siona Beaudoin</span>
-        </p>
-    </header>
+        <main class="block">
+            <nav>
+                <button
+                    onclick="window.location.href='./index.html'"
+                    id="btnProfile"
+                >
+                    Profile
+                </button>
+                <button onclick="window.location.href='./skills.html'">
+                    Skills
+                </button>
+                <button onclick="window.location.href='./experience.html'">
+                    Experience
+                </button>
+                <button onclick="window.location.href='./projects.html'">
+                    Projects
+                </button>
+                <button onclick="window.location.href='./connect.html'">
+                    Connect
+                </button>
+            </nav>
+            <div class="skills">
+                <div class="languages">
+                    <div class="skillCard one">
+                        <h2>Languages</h2>
+                        <div class="langList">
+                            <div class="indvLanguages">Java</div>
+                            <div class="indvLanguages">JavaScript</div>
+                            <div class="indvLanguages">TypeScript</div>
+                            <div class="indvLanguages">Python</div>
+                            <div class="indvLanguages">R</div>
+                            <div class="indvLanguages">SQL</div>
+                            <div class="indvLanguages">Git</div>
+                        </div>
+                    </div>
 
-
-    <main class="block">
-        <nav>
-            <button onclick ="window.location.href='./index.html'" id="btnProfile">Profile</button>
-            <button onclick="window.location.href='./skills.html'"> Skills</button>
-            <button onclick="window.location.href='./experience.html'">Experience</button>
-            <button onclick="window.location.href='./projects.html'">Projects</button>
-            <button onclick="window.location.href='./connect.html'">Connect</button>
-        </nav>
-        <div class="skills">
-            <div class="languages">
-                <h2>Languages</h2>
-                <p>Java | JavaScript | | TypeScript | HTML5 | CSS3 | Python | R | SQL | Git</p>
-                <hr><h2>Applications</h2>
-                <p>Azure DevOps | Minitab | GitHub | Figma | Adobe Suites: Photoshop, Illustrator, & InDesign</p>
-                <hr><h2>Frameworks</h2>
-                <p>React.js | Svelte | BootStrap | Visual Basic.NET</p>
-                <hr><h2>Code Editors</h2>
-                <p>VS Code | Eclipse | IntelliJ IDEA | Visual Studio Code | Notepad++</p>
-            </div><br>
-            <div class="GitHubStats">
-                <a href="https://github.com/sionamb" class="stats" target="_blank">
-                    <img src="./images/socials/github.png" alt="GitHub icon" height="100px">
-                </a>
-                <a href = "https://github.com/anuraghazra/github-readme-stats" class="statsGraphic" target="_blank">
-                    <img src="https://github-readme-stats-jk4z.vercel.app/api/top-langs/?username=sionamb&layout=compact&theme=graywhite&background=transparent&hide_border=true" class="GitHub Most Used Languages"/>
-                </a>      
+                    <div class="skillCard two">
+                        <h2>Developer Tools</h2>
+                        <div class="langList">
+                            <div class="indvLanguages">Azure DevOps</div>
+                            <div class="indvLanguages">Git</div>
+                            <div class="indvLanguages">Minitab</div>
+                            <div class="indvLanguages">Figma</div>
+                            <div class="indvLanguages">
+                                Adobe Suites: Photoshop, Illustrator, & InDesign
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skillCard three">
+                        <h2>Frameworks</h2>
+                        <div class="langList">
+                            <div class="indvLanguages">React</div>
+                            <div class="indvLanguages">Svelte</div>
+                            <div class="indvLanguages">Next.JS</div>
+                            <div class="indvLanguages">Plotly</div>
+                            <div class="indvLanguages">Pandas</div>
+                            <div class="indvLanguages">Numpy</div>
+                            <div class="indvLanguages">Streamlit</div>
+                        </div>
+                    </div>
+                    <div class="skillCard four">
+                        <h2>Database Management Systems</h2>
+                        <div class="langList">
+                            <div class="indvLanguages">
+                                Microsoft SQL Server
+                            </div>
+                            <div class="indvLanguages">MySQL</div>
+                            <div class="indvLanguages">SQLite</div>
+                            <div class="indvLanguages">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>

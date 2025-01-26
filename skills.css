@@ -1,0 +1,75 @@
+.indvLanguages {
+    color: white;
+    width: fit-content;
+    border: 5px solid #151515;
+    border-radius: 5px;
+    margin: 1%;
+    background: #151515;
+    white-space: nowrap;
+}
+.langList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.skills {
+    margin: 5%;
+}
+/* hover effect from Uiverse.io by kamehame-ha */
+.languages {
+    background: linear-gradient(#f1f1f1, #f1f1f1) padding-box,
+        linear-gradient(to right, #348aa7, #525174) border-box;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #030c09, -6px -6px 12px #0d2c21;
+    color: #000;
+    text-align: center;
+    height: 33rem;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 1s;
+    gap: 15px;
+}
+.languages .one {
+    background-color: #348aa7;
+    border: 2px solid #348aa7;
+    box-shadow: inset 6px 6px 12px #205466, inset -6px -6px 12px #48c0e8;
+}
+.languages .two {
+    background-color: #3d75a6;
+    border: 2px solid #3d75a6;
+    box-shadow: inset 6px 6px 12px #254765, inset -6px -6px 12px #55a3e7;
+}
+.languages .three {
+    background-color: #4660a5;
+    border: 2px solid #4660a5;
+    box-shadow: inset 6px 6px 12px #2b3b65, inset -6px -6px 12px #6185e5;
+}
+.languages .four {
+    background-color: #4f4da4;
+    border: 2px solid #4f4da4;
+    box-shadow: inset 6px 6px 12px #302f64, inset -6px -6px 12px #6e6be4;
+}
+.languages .skillCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+}
+.languages .skillCard:hover {
+    transform: scale(1.1, 1.1);
+}
+.languages:hover > .skillCard:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}

@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Siona Beaudoin</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Siona Beaudoin</title>
+    </head>
+    <body>
+        <header>
+            <p class="glitch">
+                <span aria-hidden="true">Siona Beaudoin</span>
+                Siona Beaudoin
+                <span aria-hidden="true">Siona Beaudoin</span>
+            </p>
+        </header>
 
-    <header>
-        <p class="glitch">
-            <span aria-hidden="true">Siona Beaudoin</span>
-            Siona Beaudoin
-            <span aria-hidden="true">Siona Beaudoin</span>
-        </p>
-    </header>
+        <main class="block">
+            <nav>
+                <button
+                    onclick="window.location.href='./index.html'"
+                    id="btnProfile"
+                >
+                    Profile
+                </button>
+                <button onclick="window.location.href='./skills.html'">
+                    Skills
+                </button>
+                <button onclick="window.location.href='./experience.html'">
+                    Experience
+                </button>
+                <button onclick="window.location.href='./projects.html'">
+                    Projects
+                </button>
 
-    <main class="block">
-        <nav>
-            <button onclick ="window.location.href='./index.html'" id="btnProfile">Profile</button>
-            <button onclick="window.location.href='./skills.html'"> Skills</button>
-            <button onclick="window.location.href='./experience.html'">Experience</button>
-            <button onclick="window.location.href='./projects.html'">Projects</button>
-            
-            <button onclick="window.location.href='./connect.html'">Connect</button>
-        </nav>
-        <div class="profile" id="profile">
-            <div class="wrapper">
-                <div class="about">
-                    <h2>About</h2>
-                    <p>
-                        Hello and welcome to my website! I am currently a senior at Saginaw Valley State University 
-                        where I am majoring in Computer Science. I am passionate about technology and am always looking
-                        for ways to learn and grow in the field. I am currently working as a software developer intern at
-                        Consumers Energy, where I primarily work on internal web applications using React. Please reach 
-                        out to me if you have any questions or would like to connect!
-                    </p>
+                <button onclick="window.location.href='./connect.html'">
+                    Connect
+                </button>
+            </nav>
+            <div class="profile" id="profile">
+                <div class="wrapper">
+                    <div class="about">
+                        <h2>About</h2>
+                        <p>
+                            Hello and welcome to my website! I am currently a
+                            senior at Saginaw Valley State University where I am
+                            majoring in Computer Science. I am passionate about
+                            technology and am always looking for ways to learn
+                            and grow in the field. I am currently working as a
+                            software developer intern at Consumers Energy, where
+                            I primarily work on internal web applications using
+                            React. Please reach out to me if you have any
+                            questions or would like to connect!
+                        </p>
+                    </div>
+                </div>
+                <div class="details">
+                    <img
+                        src="./images/avatar.png"
+                        alt="Pixel Art Character"
+                        width="250px"
+                    />
+                    <div class="bio">
+                        <p>
+                            <b>University:</b> Saginaw Valley State University
+                        </p>
+                        <p><b>School Year:</b> Senior</p>
+                        <p><b>Expected Graduation:</b> May 2025</p>
+                        <p>
+                            <b>Current Job:</b> Software Developer Intern @
+                            Consumers Energy
+                        </p>
+                        <p>
+                            <b>Interests:</b> Front-End Development | Data
+                            Visualization | Data Analysis | UI/UX Design |
+                            Graphic Design
+                        </p>
+                        <p>
+                            <b>Email:</b>
+                            <a href="mailto: smbeaudo@svsu.edu"
+                                >smbeaudo@svsu.edu</a
+                            >
+                        </p>
+                        <p>
+                            <b>Phone:</b>
+                            <a href="tel:906-369-3154">+1(906)369-3154</a>
+                        </p>
+                        <p>
+                            <b>Resume:</b>
+                            <a
+                                href="./files/Siona_Beaudoin_Resume.pdf"
+                                download="Siona_Beaudoin_Resume.pdf"
+                                >Siona_Beaudoin_Resume.pdf</a
+                            >
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="details">
-                <img src="./images/avatar.png" alt="Pixel Art Character" width="250px">
-                <div class="bio">
-                    <p><b>University:</b> Saginaw Valley State University</p>
-                    <p><b>School Year:</b> Senior</p>
-                    <p><b>Expected Graduation:</b> May 2025</p>
-                    <p><b>Current Job:</b> Software Developer Intern @ Consumers Energy</p>
-                    <p><b>Interests:</b> Front-End Development | Data Analytics | Data Visualization | 
-                        UI/UX Design | AI | Machine Learning </p>
-                    <p><b>Email:</b> <a href="mailto: smbeaudo@svsu.edu">smbeaudo@svsu.edu</a></p>
-                    <p><b>Phone:</b> 
-                        <a href="tel:906-369-3154">+1(906)369-3154</a>
-                    </p>
-                    <p><b>Resume:</b> 
-                        <a href="./files/Siona_Beaudoin_Resume.pdf" download="Siona_Beaudoin_Resume.pdf">Siona_Beaudoin_Resume.pdf</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>

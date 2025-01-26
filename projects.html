@@ -1,125 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./carousel.js"></script>
-    <title>Siona Beaudoin</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script defer src="./carousel.js"></script>
+        <title>Siona Beaudoin</title>
+    </head>
+    <body>
+        <header>
+            <p class="glitch">
+                <span aria-hidden="true">Siona Beaudoin</span>
+                Siona Beaudoin
+                <span aria-hidden="true">Siona Beaudoin</span>
+            </p>
+        </header>
 
-    <header>
-        <p class="glitch">
-            <span aria-hidden="true">Siona Beaudoin</span>
-            Siona Beaudoin
-            <span aria-hidden="true">Siona Beaudoin</span>
-        </p>
-    </header>
-
-
-    <main class="block">
-        <nav>
-            <button onclick ="window.location.href='./index.html'" id="btnProfile">Profile</button>
-            <button onclick="window.location.href='./skills.html'"> Skills</button>
-            <button onclick="window.location.href='./experience.html'">Experience</button>
-            <button onclick="window.location.href='./projects.html'">Projects</button>
-            <button onclick="window.location.href='./connect.html'">Connect</button>
-        </nav>
-        <div class="projects">
-            <div class="projectsList">
-                <div class="card card1 currentCard">
-                    <img src="./images/projects/Lunabotics.png" alt="NASA Lunabotics group photo" class="card-image">
-                    <div class="category"> NASA Lunabotics </div>
-                    <div class="heading">
-                        <ul>
-                            <li>Assisted in object detection using deep learning and collected / labeled image data.</li>
-                            <li>Engaged in community outreach by presenting to a FIRST Robotics team about our project.</li>
-                        </ul>
-                        <div class="projectDate"><span>Jan 2022 - May 2022</span></div>
+        <main class="block">
+            <nav>
+                <button
+                    onclick="window.location.href='./index.html'"
+                    id="btnProfile"
+                >
+                    Profile
+                </button>
+                <button onclick="window.location.href='./skills.html'">
+                    Skills
+                </button>
+                <button onclick="window.location.href='./experience.html'">
+                    Experience
+                </button>
+                <button onclick="window.location.href='./projects.html'">
+                    Projects
+                </button>
+                <button onclick="window.location.href='./connect.html'">
+                    Connect
+                </button>
+            </nav>
+            <div class="projects">
+                <div class="projectsList">
+                    <div class="card card1 currentCard">
+                        <img
+                            src="./images/projects/Lunabotics.png"
+                            alt="NASA Lunabotics group photo"
+                            class="card-image"
+                        />
+                        <div class="category">NASA Lunabotics</div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Assisted in object detection using deep
+                                    learning and collected / labeled image data.
+                                </li>
+                                <li>
+                                    Engaged in community outreach by presenting
+                                    to a FIRST Robotics team about our project.
+                                </li>
+                            </ul>
+                            <div class="projectDate">
+                                <span>Jan 2022 - May 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <img
+                            src="./images/projects/JSHS.jpg"
+                            alt="Junior Science and Humanities Symposium award presentation"
+                            class="card-image"
+                        />
+                        <div class="category">
+                            Junior Science and Humanities Symposium
+                        </div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Conducted two research projects where I
+                                    placed 3rd at the regional competition one
+                                    Year and 3rd nationally another in the Life
+                                    Science category.
+                                </li>
+                            </ul>
+                            <div class="projectDate">June 2018 - May 2020</div>
+                        </div>
+                    </div>
+                    <div class="card card3">
+                        <img
+                            src="./images/projects/acm.png"
+                            alt="Association of Computing Machinery Logo"
+                            class="card-image"
+                        />
+                        <div class="category">
+                            Association of Computing Machinery
+                        </div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Current Vice President where I assist in the
+                                    planning of weekly meetings and organizing
+                                    events.
+                                </li>
+                            </ul>
+                            <div class="projectDate">Sept 2021 - Present</div>
+                        </div>
+                    </div>
+                    <div class="card card4">
+                        <img
+                            src="./images/projects/MLC.jpg"
+                            alt="Machine Learning Club Logo"
+                            class="card-image"
+                        />
+                        <div class="category">Machine Learning Club</div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Competed on a team at the FA2022 semester
+                                    competition (12/09/2022) where my team won
+                                    by having the highest accuracy for one of
+                                    the problems.
+                                </li>
+                            </ul>
+                            <div class="projectDate">Sept 2021 - Present</div>
+                        </div>
+                    </div>
+                    <div class="card card5">
+                        <img
+                            src="./images/projects/GDSC.png"
+                            alt="Google Developers Student Club Logo"
+                            class="card-image"
+                        />
+                        <div class="category">
+                            Google Developers Student Club
+                        </div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Attended weekly machine learning workshops
+                                    to engage in hands-on experience in image
+                                    processing and various neural network
+                                    techniques (primarily Convolutional Neural
+                                    Network).
+                                </li>
+                            </ul>
+                            <div class="projectDate">Sept 2022 - Present</div>
+                        </div>
+                    </div>
+                    <div class="card card6">
+                        <img
+                            src="./images/projects/FIRSTrobotics.jpg"
+                            alt="Working on robot"
+                            class="card-image"
+                        />
+                        <div class="category">FIRST Robotics</div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Was the president of Lake Linden - Hubbell
+                                    High School' team for two years where I led
+                                    my team in the building of a robot that we
+                                    competed with at two regional competitions
+                                    each year.
+                                </li>
+                            </ul>
+                            <div class="projectDate">Sept 2017 - May 2022</div>
+                        </div>
+                    </div>
+                    <div class="card card7">
+                        <img
+                            src="./images/projects/eCYBERMISSION.jpg"
+                            alt="eCybermission award presentation"
+                            class="card-image"
+                        />
+                        <div class="category">eCybermission</div>
+                        <div class="heading">
+                            <ul>
+                                <li>
+                                    Completed research projects on a team of 3
+                                    regarding the use of a mining waste, where
+                                    we placed 1st in Michigan 3 years and 1st
+                                    nationally 1 year.
+                                </li>
+                                <li>
+                                    Was awarded a $5,000 community outreach
+                                    research grant on the use of this mining
+                                    waste.
+                                </li>
+                            </ul>
+                            <div class="projectDate">
+                                <span>Sept 2016 - Dec 2019</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card card2">
-                    <img src="./images/projects/JSHS.jpg" alt="Junior Science and Humanities Symposium award presentation" class="card-image">
-                    <div class="category"> Junior Science and Humanities Symposium </div>
-                    <div class="heading"> 
-                        <ul>
-                            <li>Conducted two research projects where I placed 3rd at the regional competition one Year 
-                                and 3rd nationally another in the Life Science category.</li>
-                        </ul>
-                        <div class="projectDate">June 2018 - May 2020</div>
-                    </div>
-                </div>
-                <div class="card card3">
-                    <img src="./images/projects/acm.png" alt="Association of Computing Machinery Logo" class="card-image">
-                    <div class="category"> Association of Computing Machinery </div>
-                    <div class="heading"> 
-                        <ul>
-                            <li>Current Vice President  where I assist in the planning of weekly meetings and organizing events.</li>
-                        </ul>
-                        <div class="projectDate">Sept 2021 - Present</div>
-                    </div>
-                </div>
-                <div class="card card4">
-                    <img src="./images/projects/MLC.jpg" alt="Machine Learning Club Logo" class="card-image">
-                    <div class="category"> Machine Learning Club </div>
-                    <div class="heading">
-                        <ul>
-                            <li>Competed on a team at the FA2022 semester competition (12/09/2022) where my team won by having
-                                the highest accuracy for one of the problems.
-                            </li>
-                        </ul>
-                        <div class="projectDate">Sept 2021 - Present</div>
-                    </div>
-                </div>
-                <div class="card card5">
-                    <img src="./images/projects/GDSC.png" alt="Google Developers Student Club Logo" class="card-image">
-                    <div class="category"> Google Developers Student Club </div>
-                    <div class="heading">
-                        <ul>
-                            <li>Attended weekly machine learning workshops to engage in hands-on experience in image processing 
-                                and various neural network techniques (primarily Convolutional Neural Network).</li>
-                        </ul>
-                        <div class="projectDate">Sept 2022 - Present</div>
-                    </div>
-                </div>
-                <div class="card card6">
-                    <img src="./images/projects/FIRSTrobotics.jpg" alt="Working on robot" class="card-image">
-                    <div class="category"> FIRST Robotics </div>
-                    <div class="heading">
-                        <ul>
-                            <li>Was the president of Lake Linden - Hubbell High School' team for two years where I 
-                                led my team in the building of a robot that we competed with at two regional competitions each year.
-                            </li>
-                        </ul>
-                        <div class="projectDate">Sept 2017 - May 2022</div>
-                    </div>
-                </div>
-                <div class="card card7">
-                    <img src="./images/projects/eCYBERMISSION.jpg" alt="eCybermission award presentation" class="card-image">
-                    <div class="category"> eCybermission </div>
-                    <div class="heading">
-                        <ul>
-                            <li>
-                                Completed research projects on a team of 3 regarding the use of a mining waste, where we 
-                                placed 1st in Michigan 3 years and 1st nationally 1 year.</li>
-                            <li>Was awarded a $5,000 community outreach research grant on the use of this mining waste.</li>
-                        </ul>
-                        <div class="projectDate"><span>Sept 2016 - Dec 2019</span></div>
-                    </div>
+                <div class="actionButtons">
+                    <button id="previous" class="custom-btn btn-1">
+                        <img
+                            src="./images/direction/previous.png"
+                            alt="Previous"
+                            height="35px"
+                        />
+                    </button>
+                    <button id="next" class="custom-btn btn-1">
+                        <img
+                            src="./images/direction/next.png"
+                            alt="Next"
+                            height="35px"
+                        />
+                    </button>
                 </div>
             </div>
-            <div class="actionButtons">
-                <button id="previous" class="custom-btn btn-1">
-                    <img src="./images/direction/previous.png" alt="Previous" height="35px">
-                </button>
-                <button id="next" class="custom-btn btn-1">
-                    <img src="./images/direction/next.png" alt="Next" height="35px">
-                </button>
-            </div>
-            
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>

@@ -1,127 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script defer src="./app.js"></script>
-    <title>Siona Beaudoin</title>
-</head>
-<body onload="dropDown()">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script defer src="./app.js"></script>
+        <title>Siona Beaudoin</title>
+    </head>
+    <body onload="dropDown()">
+        <header>
+            <p class="glitch">
+                <span aria-hidden="true">Siona Beaudoin</span>
+                Siona Beaudoin
+                <span aria-hidden="true">Siona Beaudoin</span>
+            </p>
+        </header>
 
-    <header>
-        <p class="glitch">
-            <span aria-hidden="true">Siona Beaudoin</span>
-            Siona Beaudoin
-            <span aria-hidden="true">Siona Beaudoin</span>
-        </p>
-    </header>
+        <main class="block">
+            <nav>
+                <button
+                    onclick="window.location.href='./index.html'"
+                    id="btnProfile"
+                >
+                    Profile
+                </button>
+                <button onclick="window.location.href='./skills.html'">
+                    Skills
+                </button>
+                <button onclick="window.location.href='./experience.html'">
+                    Experience
+                </button>
+                <button onclick="window.location.href='./projects.html'">
+                    Projects
+                </button>
+                <button onclick="window.location.href='./connect.html'">
+                    Connect
+                </button>
+            </nav>
 
-
-    <main class="block">
-        <nav>
-            <button onclick ="window.location.href='./index.html'" id="btnProfile">Profile</button>
-            <button onclick="window.location.href='./skills.html'"> Skills</button>
-            <button onclick="window.location.href='./experience.html'">Experience</button>
-            <button onclick="window.location.href='./projects.html'">Projects</button>
-            <button onclick="window.location.href='./connect.html'">Connect</button>
-        </nav>
-                
-        <div class="experience">
-            <button class="accordion firstAccordion" id="exp1">
-                <div class="expPosition">
-                    <p><b>Software Developer Intern | Operation Analytics Team</b></p>
-                    <p>May 2023 - Present</p>
+            <div class="experience">
+                <button class="accordion firstAccordion active" id="exp1">
+                    <div class="expPosition">
+                        <p>
+                            <b
+                                >Software Developer Intern | Operation Analytics
+                                Team</b
+                            >
+                        </p>
+                        <p>May 2023 - Present</p>
+                    </div>
+                    <div class="expLocation">
+                        <p><em>Consumers Energy</em></p>
+                        <p><em>Remote</em></p>
+                    </div>
+                </button>
+                <div class="panel">
+                    <div class="expDescription">
+                        <ul>
+                            <li>
+                                Conducted training sessions for various non-IT
+                                teams on utilizing Git and Azure DevOps (ADO) as
+                                part of a risk mitigation plan.
+                            </li>
+                            <li>
+                                Indexed and uploaded hundreds of Excel documents
+                                using Python for integration with an internal
+                                OpenAI chatbot.
+                            </li>
+                            <li>
+                                Developed an internal web application using the
+                                <b>React</b> framework and the Prime React UI
+                                library, efficiently integrating the front-end
+                                with the back-end through API calls, resulting
+                                in a smooth user experience.
+                            </li>
+                            <li>
+                                Used <b>SQL triggers</b> to create archive
+                                tables for automatic data archiving and
+                                retention to preserve historical data.
+                            </li>
+                            <li>
+                                Completed various training, including
+                                <b>Microsoft Azure Cloud Fundamentals</b>.
+                            </li>
+                            <li>
+                                Efficiently utilized <b>Agile</b> and
+                                <b>Scrum</b> methodologies to create user
+                                stories and report my progress on tasks.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="expLocation">
-                    <p><em>Consumers Energy</em></p>
-                    <p><em>Remote</em></p> 
+                <button class="accordion" id="exp2">
+                    <div class="expPosition">
+                        <p>
+                            <b
+                                >Student Research Assistant | Channel State
+                                Information</b
+                            >
+                        </p>
+                        <p>July 2023 - May 2024</p>
+                    </div>
+                    <div class="expLocation">
+                        <p><em>Saginaw Valley State University</em></p>
+                        <p><em>University Center, MI</em></p>
+                    </div>
+                </button>
+                <div class="panel">
+                    <div class="expDescription">
+                        <ul>
+                            <li>
+                                Conducted a research project funded by the
+                                Michigan Space Grant Consortium, exploring the
+                                potential of utilizing channel state information
+                                (<strong>CSI</strong>) in wireless communication
+                                systems as an authentication method.
+                            </li>
+                            <li>
+                                Collected hundreds of samples of CSI data using
+                                a smartphone with the Termux Terminal
+                                application.
+                            </li>
+                            <li>
+                                Utilized <strong>Python Notebook</strong> files
+                                with <strong>Plotly</strong>,
+                                <strong>Numpy</strong>, and
+                                <strong>Pandas</strong> to analyze and visualize
+                                the RSSI data extracted from the CSI data, and
+                                created a <strong>confusion matrix</strong>.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </button>
-            <div class="panel">
-                <div class="expDescription">
-                    <ul>
-                        <li>Conducted training sessions for various non-IT teams on utilizing Git and Azure DevOps (ADO) as part of a risk
-                            mitigation plan.
-                        </li>
-                        <li>Indexed and uploaded hundreds of Excel documents using Python for integration with an internal OpenAI chatbot.</li>
-                        <li>Developed an internal web application using the <b>React</b> framework and the Prime React UI library, 
-                            efficiently integrating the front-end with the back-end through API calls, resulting in a smooth user experience.
-                        </li>
-                        <li>
-                            Used <b>SQL triggers</b> to create archive tables for automatic data archiving and retention to preserve historical data.
-                        </li>
-                        <li>
-                            Completed various training, including <b>Microsoft Azure Cloud Fundamentals</b>.
-                        </li>
-                        <li>
-                            Efficiently utilized <b>Agile</b> and <b>Scrum</b> methodologies to create user stories and report my progress on tasks.
-                        </li>
-                    </ul>
+                <button class="accordion" id="exp3">
+                    <div class="expPosition">
+                        <p>
+                            <b
+                                >Student Research Assistant | Cybersecurity
+                                Paper
+                            </b>
+                        </p>
+                        <p>Sept 2022 - March 2023</p>
+                    </div>
+                    <div class="expLocation">
+                        <p><em>Saginaw Valley State University</em></p>
+                        <p><em>University Center, MI</em></p>
+                    </div>
+                </button>
+                <div class="panel">
+                    <div class="expDescription">
+                        <p>
+                            Assisted a professor on a survey paper on an
+                            overview of cybersecurity attacks, trends,
+                            prediction, and detection.
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion lastAccordion" id="exp4">
+                    <div class="expPosition">
+                        <p><b>Small Business Website Rework</b></p>
+                        <p>Aug 2022 - May 2023</p>
+                    </div>
+                    <div class="expLocation">
+                        <p><em>Wood'n Spoon LLC</em></p>
+                        <p><em>Mohawk, MI</em></p>
+                    </div>
+                </button>
+                <div class="panel lastPanel">
+                    <div class="expDescription">
+                        <p>
+                            Developed a user-friendly front-end interface using
+                            React to enhance the website’s performance and
+                            interactivity
+                        </p>
+                    </div>
                 </div>
             </div>
-            <button class="accordion" id="exp2">
-                <div class="expPosition">
-                    <p><b>Student Research Assistant | Channel State Information</b></p>
-                    <p>July 2023 - May 2024</p>    
-                </div>
-                <div class="expLocation">
-                    <p><em>Saginaw Valley State University</em></p>
-                    <p><em>University Center, MI</em></p>    
-                </div>
-            </button>
-            <div class="panel">
-                <div class="expDescription">
-                    <ul>
-                        <li>
-                          Conducted a research project funded by the Michigan Space Grant Consortium, exploring the potential of utilizing channel state 
-                          information (<strong>CSI</strong>) in wireless communication systems as an authentication method.
-                        </li>
-                        <li>
-                          Collected hundreds of samples of CSI data using a smartphone with the Termux Terminal application.
-                        </li>
-                        <li>
-                          Utilized <strong>Python Notebook</strong> files with <strong>Plotly</strong>, <strong>Numpy</strong>, and <strong>Pandas</strong> 
-                          to analyze and visualize the RSSI data extracted from the CSI data, and created a <strong>confusion matrix</strong>.
-                        </li>
-                      </ul>
-                      
-                </div>            
-            </div>
-            <button class="accordion" id="exp3">
-                <div class="expPosition">
-                    <p><b>Student Research Assistant | Cybersecurity Paper </b></p>
-                    <p>Sept 2022 - March 2023</p>
-                </div>
-                <div class="expLocation">
-                    <p><em>Saginaw Valley State University</em></p>
-                    <p><em>University Center, MI</em></p>   
-                </div>
-            </button>
-            <div class="panel">
-                <div class="expDescription">
-                    <p>Assisted a professor on a survey paper on an overview of cybersecurity attacks, trends, prediction, and detection.</p>
-                </div>
-            </div>
-            <button class="accordion lastAccordion" id="exp4">
-                <div class="expPosition">
-                    <p><b>Small Business Website Rework</b></p>
-                    <p>Aug 2022 - May 2023</p>
-                </div>
-                <div class="expLocation">
-                    <p><em>Wood'n Spoon LLC</em></p>
-                    <p><em>Mohawk, MI</em></p>
-                </div>
-            </button>
-            <div class="panel lastPanel">
-                <div class="expDescription">
-                    <p>
-                        Developed a user-friendly front-end interface using React to enhance the website’s performance and interactivity
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
